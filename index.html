@@ -104,10 +104,103 @@ $(function(){
 </pre>
       </section><!-- usage -->
 
+      <!-- using-options -->
+      <section>
+	<h2><a name="using-options" class="anchor" href="#using-options"><span class="oncicon onticon-link"></span></a>Using options</h2>
+	<p>You can add any option by 'data-' attribute like this.</p>
+
+<pre class="prettyprint lang-html">
+&lt;div class="foo" data-title="sample1" data-font-size="16" data-width="640" data-height="480" data-direction="hori"&gt;
+  some text here
+&lt;/div&gt;
+
+&lt;script type="text/javascript"&gt;
+$(function(){
+  $(".foo").pagedCard();
+});
+&lt;/script&gt;
+</pre>
+
+	<p>You can also set same option by jquery arguments like this.</p>
+
+<pre class="prettyprint lang-html">
+&lt;div class="foo2"&gt;
+  some text here
+&lt;/div&gt;
+
+&lt;script type="text/javascript"&gt;
+$(function(){
+  $(".foo2").pagedCard({
+    title:"sample2",
+    direction:"hori",
+    fontSize:16,
+    width:640,
+    height:480
+  });
+});
+&lt;/script&gt;
+</pre>  
+      </section><!-- using-options -->
+
+
       <!-- options -->
       <section>
 	<h2><a name="options" class="anchor" href="#options"><span class="oncicon onticon-link"></span></a>Options</h2>
+
+	<table>
+	  <thead>
+	    <tr><th>name</th><th>description</th></tr>
+	  </thead>
+	  <tbody>
+	    <tr>
+	      <td>title</td>
+	      <td>Header title string</td>
+	    </tr>
+
+	    <tr>
+	      <td>width</td>
+	      <td>Width of screen</td>
+	    </tr>
+
+	    <tr>
+	      <td>height</td>
+	      <td>Height of screen</td>
+	    </tr>
+
+	    <tr>
+	      <td>fontSize</td>
+	      <td>Font size of screen. Notice that this property is defined as 'data-font-size' in html attribute.</td>
+	    </tr>
+
+	    <tr>
+	      <td>direction</td>
+	      <td>Document direction. "vert" or "hori" is enabled.</td>
+	    </tr>
+
+	    <tr>
+	      <td>hori</td>
+	      <td>Document mode of screen. It is used if direction is "hori". Only "lr-tb" is supported.</td>
+	    </tr>
+
+	    <tr>
+	      <td>vert</td>
+	      <td>Document mode of screen. It is used if direction is "vert". "tb-rl" or "tb-lr" is supported.</td>
+	    </tr>
+
+	    <tr>
+	      <td>vertFontFamily</td>
+	      <td>Css property 'font-family' in vertical mode.</td>
+	    </tr>
+
+	    <tr>
+	      <td>horiFontFamily</td>
+	      <td>Css property 'font-family' in horizontal mode.</td>
+	    </tr>
+	  </tbody>
+	</table>
       </section><!-- options -->
+	
+
 
       <!-- license -->
       <section>
