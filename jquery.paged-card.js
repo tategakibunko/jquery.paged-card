@@ -253,6 +253,9 @@
   // supported options
   $.fn.pagedCard.defaults = {
 
+    // card title text displayed at header.
+    title:"",
+
     // document direction. "hori" or "vert" enabled.
     direction:"hori",
 
