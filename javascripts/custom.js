@@ -1,0 +1,5 @@
+$(function(){
+  $(".paged-card").pagedCard();
+});
+
+

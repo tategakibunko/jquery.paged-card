@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>jquery.paged-card by tategakibunko</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://nehan.googlecode.com/hg/nehan4.css" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheets/jquery.paged-card.css">
+    <link rel="stylesheet" href="stylesheets/custom.css">
+    <style type="text/css">
+      body{ width:100%; margin:1em 2em; }
+      .paged-card{ display:none; }
+      .paged-card-reader{ color:black; }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>jquery.paged-card</h1>
+        <p>Convert target text into paged-media card.</p>
+
+        <p class="view"><a href="https://github.com/tategakibunko/jquery.paged-card">View the Project on GitHub <small>tategakibunko/jquery.paged-card</small></a></p>
+
+        <ul>
+          <li><a href="https://github.com/tategakibunko/jquery.paged-card/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/tategakibunko/jquery.paged-card/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/tategakibunko/jquery.paged-card">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+
+      <!-- summary -->
+      <section>
+	<h2><a name="summary" class="anchor" href="#summary"><span class="octicon octicon-link"></span></a>Summary</h2>
+	<p>jquery.paged-card is jQuery plugin that converts text into paged-media card ui.</p>
+	<p>It is usefull to display long long text in fiexed size layout.</p>
+	<p>Supports not only horizontal layout, but also asian vertical layout(tb-rl, tb-lr).</p>
+      </section><!-- summary -->
+
+      <!-- demo -->
+      <section>
+	<h2><a name="demo" class="anchor" href="#demo"><span class="octicon octicon-link"></span></a>Demo</h2>
+
+<!-- horizontal card -->
+<div class="paged-card" data-title="Lorem ipsum" data-direction="hori" data-width="450" data-height="320" data-font-size="16">
+<h1>display long long text in fiexed size</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+
+<!-- vertical card -->
+<div class="paged-card" data-title="夏目漱石 こころ 冒頭（縦書き）" data-direction="vert" data-width="450" data-height="320" data-font-size="16">
+　<ruby><rb>私</rb><rp>（</rp><rt>わたくし</rt><rp>）</rp></ruby>はその人を常に先生と呼んでいた。だからここでもただ先生と書くだけで本名は打ち明けない。これは世間を<ruby><rb>憚</rb><rp>（</rp><rt>はば</rt><rp>）</rp></ruby>かる遠慮というよりも、その方が私にとって自然だからである。私はその人の記憶を呼び起すごとに、すぐ「先生」といいたくなる。筆を<ruby><rb>執</rb><rp>（</rp><rt>と</rt><rp>）</rp></ruby>っても心持は同じ事である。よそよそしい<ruby><rb>頭文字</rb><rp>（</rp><rt>かしらもじ</rt><rp>）</rp></ruby>などはとても使う気にならない。<br />
+　私が先生と知り合いになったのは<ruby><rb>鎌倉</rb><rp>（</rp><rt>かまくら</rt><rp>）</rp></ruby>である。その時私はまだ若々しい書生であった。暑中休暇を利用して海水浴に行った友達からぜひ来いという<ruby><rb>端書</rb><rp>（</rp><rt>はがき</rt><rp>）</rp></ruby>を受け取ったので、私は多少の金を<ruby><rb>工面</rb><rp>（</rp><rt>くめん</rt><rp>）</rp></ruby>して、出掛ける事にした。私は金の工面に<ruby><rb>二</rb><rp>（</rp><rt>に</rt><rp>）</rp></ruby>、<ruby><rb>三日</rb><rp>（</rp><rt>さんち</rt><rp>）</rp></ruby>を費やした。ところが私が鎌倉に着いて三日と<ruby><rb>経</rb><rp>（</rp><rt>た</rt><rp>）</rp></ruby>たないうちに、私を呼び寄せた友達は、急に国元から帰れという電報を受け取った。電報には母が病気だからと断ってあったけれども友達はそれを信じなかった。友達はかねてから国元にいる親たちに<ruby><rb>勧</rb><rp>（</rp><rt>すす</rt><rp>）</rp></ruby>まない結婚を<ruby><rb>強</rb><rp>（</rp><rt>し</rt><rp>）</rp></ruby>いられていた。彼は現代の習慣からいうと結婚するにはあまり年が若過ぎた。それに<ruby><rb>肝心</rb><rp>（</rp><rt>かんじん</rt><rp>）</rp></ruby>の当人が気に入らなかった。それで夏休みに当然帰るべきところを、わざと避けて東京の近くで遊んでいたのである。彼は電報を私に見せてどうしようと相談をした。私にはどうしていいか分らなかった。けれども実際彼の母が病気であるとすれば彼は<ruby><rb>固</rb><rp>（</rp><rt>もと</rt><rp>）</rp></ruby>より帰るべきはずであった。それで彼はとうとう帰る事になった。せっかく来た私は一人取り残された。
+</div>
+      </section><!-- demo -->
+
+      <!-- install -->
+      <section>
+	<h2><a name="install" class="anchor" href="#install"><span class="oncicon onticon-link"></span></a>Install</h2>
+<pre class="prettyprint lang-html">
+&lt;!-- stylesheets --&gt;
+&lt;link href="/path/to/nehan.css" type="text/css" rel="stylesheet"&gt;
+&lt;link href="/path/to/jquery.paged-card.css" type="text/css" rel="stylesheet"&gt;
+&lt;link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet"&gt;
+
+&lt;!-- javascripts --&gt;
+&lt;script src="/path/to/jquery.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script src="/path/to/underscore.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script src="/path/to/backbone.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script src="/path/to/nehan.js" type="text/javascript"&gt;&lt;/script&gt;
+&lt;script src="/path/to/jquery.paged-card.js" type="text/javascript"&gt;&lt;/script&gt;
+</pre>
+      </section><!-- install -->
+
+      <!-- usage -->
+      <section>
+	<h2><a name="usage" class="anchor" href="#usage"><span class="oncicon onticon-link"></span></a>Usage</h2>
+
+<pre class="prettyprint lang-html">
+&lt;!-- horizontal card --&gt;
+&lt;div class="foo" data-title="card1" data-font-size="16" data-width="640" data-height="480" data-direction="hori"&gt;
+  some horizontal text here
+&lt;/div&gt;
+
+&lt;!-- vertical card --&gt;
+&lt;div class="foo" data-title="card2" data-font-size="16" data-width="640" data-height="480" data-direction="vert"&gt;
+  some vertical text here
+&lt;/div&gt;
+
+&lt;!-- javascript --&gt;
+&lt;script type="text/javascript"&gt;
+$(function(){
+  $(".foo").pagedCard();
+});
+&lt;/script&gt;
+</pre>
+      </section><!-- usage -->
+
+      <!-- options -->
+      <section>
+	<h2><a name="options" class="anchor" href="#options"><span class="oncicon onticon-link"></span></a>Options</h2>
+      </section><!-- options -->
+
+      <!-- license -->
+      <section>
+        <h2><a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
+	<p>licensed under MIT.</p>
+      </section>
+
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/tategakibunko">tategakibunko</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone-min.js"></script>
+    <script type="text/javascript" src="https://nehan.googlecode.com/hg/nehan4.min.js"></script>
+    <script type="text/javascript" src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+    <script type="text/javascript" src="javascripts/scale.fix.js"></script>
+    <script type="text/javascript" src="javascripts/jquery.paged-card.js"></script>
+    <script type="text/javascript" src="javascripts/custom.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-399060-29', 'tategakibunko.github.io');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>
