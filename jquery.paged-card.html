@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <title>jquery.paged-card.js demo</title>
+    <meta content="ja" name="content-language">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- styles -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://nehan.googlecode.com/hg/nehan4.css" rel="stylesheet">
+    <link href="jquery.paged-card.css" rel="stylesheet">
+    <style type="text/css">
+      body{ width:100%; margin:1em 2em; }
+      .paged-card{ display:none; }
+    </style>
+  </head>
+  <body>
+
+<h1><i class="fa fa-files-o"></i> jquery.paged-card.js demo</h1>
+
+<!-- horizontal card -->
+<div class="paged-card" data-title="Lorem ipsum" data-direction="hori" data-width="600" data-height="400">
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+
+<!-- vertical card -->
+<div class="paged-card" data-title="夏目漱石 こころ 冒頭（縦書き）" data-direction="vert" data-width="600" data-height="400">
+　<ruby><rb>私</rb><rp>（</rp><rt>わたくし</rt><rp>）</rp></ruby>はその人を常に先生と呼んでいた。だからここでもただ先生と書くだけで本名は打ち明けない。これは世間を<ruby><rb>憚</rb><rp>（</rp><rt>はば</rt><rp>）</rp></ruby>かる遠慮というよりも、その方が私にとって自然だからである。私はその人の記憶を呼び起すごとに、すぐ「先生」といいたくなる。筆を<ruby><rb>執</rb><rp>（</rp><rt>と</rt><rp>）</rp></ruby>っても心持は同じ事である。よそよそしい<ruby><rb>頭文字</rb><rp>（</rp><rt>かしらもじ</rt><rp>）</rp></ruby>などはとても使う気にならない。<br />
+　私が先生と知り合いになったのは<ruby><rb>鎌倉</rb><rp>（</rp><rt>かまくら</rt><rp>）</rp></ruby>である。その時私はまだ若々しい書生であった。暑中休暇を利用して海水浴に行った友達からぜひ来いという<ruby><rb>端書</rb><rp>（</rp><rt>はがき</rt><rp>）</rp></ruby>を受け取ったので、私は多少の金を<ruby><rb>工面</rb><rp>（</rp><rt>くめん</rt><rp>）</rp></ruby>して、出掛ける事にした。私は金の工面に<ruby><rb>二</rb><rp>（</rp><rt>に</rt><rp>）</rp></ruby>、<ruby><rb>三日</rb><rp>（</rp><rt>さんち</rt><rp>）</rp></ruby>を費やした。ところが私が鎌倉に着いて三日と<ruby><rb>経</rb><rp>（</rp><rt>た</rt><rp>）</rp></ruby>たないうちに、私を呼び寄せた友達は、急に国元から帰れという電報を受け取った。電報には母が病気だからと断ってあったけれども友達はそれを信じなかった。友達はかねてから国元にいる親たちに<ruby><rb>勧</rb><rp>（</rp><rt>すす</rt><rp>）</rp></ruby>まない結婚を<ruby><rb>強</rb><rp>（</rp><rt>し</rt><rp>）</rp></ruby>いられていた。彼は現代の習慣からいうと結婚するにはあまり年が若過ぎた。それに<ruby><rb>肝心</rb><rp>（</rp><rt>かんじん</rt><rp>）</rp></ruby>の当人が気に入らなかった。それで夏休みに当然帰るべきところを、わざと避けて東京の近くで遊んでいたのである。彼は電報を私に見せてどうしようと相談をした。私にはどうしていいか分らなかった。けれども実際彼の母が病気であるとすれば彼は<ruby><rb>固</rb><rp>（</rp><rt>もと</rt><rp>）</rp></ruby>より帰るべきはずであった。それで彼はとうとう帰る事になった。せっかく来た私は一人取り残された。
+</div>
+
+<!-- wide vertical card -->
+<div class="paged-card" data-title="夏目漱石 こころ 冒頭（縦書き２）" data-direction="vert" data-width="800"  data-height="600" data-font-size="20">
+　<ruby><rb>私</rb><rp>（</rp><rt>わたくし</rt><rp>）</rp></ruby>がその掛茶屋で先生を見た時は、先生がちょうど着物を脱いでこれから海へ入ろうとするところであった。私はその時反対に<ruby><rb>濡</rb><rp>（</rp><rt>ぬ</rt><rp>）</rp></ruby>れた<ruby><rb>身体</rb><rp>（</rp><rt>からだ</rt><rp>）</rp></ruby>を風に吹かして水から上がって来た。二人の<ruby><rb>間</rb><rp>（</rp><rt>あいだ</rt><rp>）</rp></ruby>には目を<ruby><rb>遮</rb><rp>（</rp><rt>さえぎ</rt><rp>）</rp></ruby>る幾多の黒い頭が動いていた。特別の事情のない限り、私はついに先生を見逃したかも知れなかった。それほど浜辺が混雑し、それほど私の頭が<ruby><rb>放漫</rb><rp>（</rp><rt>ほうまん</rt><rp>）</rp></ruby>であったにもかかわらず、私がすぐ先生を見付け出したのは、先生が一人の西洋人を<ruby><rb>伴</rb><rp>（</rp><rt>つ</rt><rp>）</rp></ruby>れていたからである。<br />
+　その西洋人の優れて白い皮膚の色が、掛茶屋へ入るや<ruby><rb>否</rb><rp>（</rp><rt>いな</rt><rp>）</rp></ruby>や、すぐ私の注意を<ruby><rb>惹</rb><rp>（</rp><rt>ひ</rt><rp>）</rp></ruby>いた。純粋の日本の<ruby><rb>浴衣</rb><rp>（</rp><rt>ゆかた</rt><rp>）</rp></ruby>を着ていた彼は、それを<ruby><rb>床几</rb><rp>（</rp><rt>しょうぎ</rt><rp>）</rp></ruby>の上にすぽりと<ruby><rb>放</rb><rp>（</rp><rt>ほう</rt><rp>）</rp></ruby>り出したまま、腕組みをして海の方を向いて立っていた。彼は我々の<ruby><rb>穿</rb><rp>（</rp><rt>は</rt><rp>）</rp></ruby>く<ruby><rb>猿股</rb><rp>（</rp><rt>さるまた</rt><rp>）</rp></ruby>一つの<ruby><rb>外</rb><rp>（</rp><rt>ほか</rt><rp>）</rp></ruby>何物も肌に着けていなかった。私にはそれが第一不思議だった。私はその二日前に<ruby><rb>由井</rb><rp>（</rp><rt>ゆい</rt><rp>）</rp></ruby>が<ruby><rb>浜</rb><rp>（</rp><rt>はま</rt><rp>）</rp></ruby>まで行って、砂の上にしゃがみながら、長い間西洋人の海へ入る様子を<ruby><rb>眺</rb><rp>（</rp><rt>なが</rt><rp>）</rp></ruby>めていた。私の<ruby><rb>尻</rb><rp>（</rp><rt>しり</rt><rp>）</rp></ruby>をおろした所は少し小高い丘の上で、そのすぐ<ruby><rb>傍</rb><rp>（</rp><rt>わき</rt><rp>）</rp></ruby>がホテルの裏口になっていたので、私の<ruby><rb>凝</rb><rp>（</rp><rt>じっ</rt><rp>）</rp></ruby>としている<ruby><rb>間</rb><rp>（</rp><rt>あいだ</rt><rp>）</rp></ruby>に、<ruby><rb>大分</rb><rp>（</rp><rt>だいぶ</rt><rp>）</rp></ruby>多くの男が塩を浴びに出て来たが、いずれも胴と腕と<ruby><rb>股</rb><rp>（</rp><rt>もも</rt><rp>）</rp></ruby>は出していなかった。女は<ruby><rb>殊更</rb><rp>（</rp><rt>ことさら</rt><rp>）</rp></ruby>肉を隠しがちであった。大抵は頭に<ruby><rb>護謨製</rb><rp>（</rp><rt>ゴムせい</rt><rp>）</rp></ruby>の<ruby><rb>頭巾</rb><rp>（</rp><rt>ずきん</rt><rp>）</rp></ruby>を<ruby><rb>被</rb><rp>（</rp><rt>かぶ</rt><rp>）</rp></ruby>って、<ruby><rb>海老茶</rb><rp>（</rp><rt>えびちゃ</rt><rp>）</rp></ruby>や<ruby><rb>紺</rb><rp>（</rp><rt>こん</rt><rp>）</rp></ruby>や<ruby><rb>藍</rb><rp>（</rp><rt>あい</rt><rp>）</rp></ruby>の色を波間に浮かしていた。そういう有様を目撃したばかりの私の<ruby><rb>眼</rb><rp>（</rp><rt>め</rt><rp>）</rp></ruby>には、猿股一つで済まして<ruby><rb>皆</rb><rp>（</rp><rt>みん</rt><rp>）</rp></ruby>なの前に立っているこの西洋人がいかにも珍しく見えた。
+</div>
+
+<!-- wide horizontal card -->
+<div class="paged-card" data-title="夏目漱石 こころ 冒頭（横書き）" data-direction="hori" data-width="800"  data-height="600" data-font-size="20">
+　<ruby><rb>私</rb><rp>（</rp><rt>わたくし</rt><rp>）</rp></ruby>がその掛茶屋で先生を見た時は、先生がちょうど着物を脱いでこれから海へ入ろうとするところであった。私はその時反対に<ruby><rb>濡</rb><rp>（</rp><rt>ぬ</rt><rp>）</rp></ruby>れた<ruby><rb>身体</rb><rp>（</rp><rt>からだ</rt><rp>）</rp></ruby>を風に吹かして水から上がって来た。二人の<ruby><rb>間</rb><rp>（</rp><rt>あいだ</rt><rp>）</rp></ruby>には目を<ruby><rb>遮</rb><rp>（</rp><rt>さえぎ</rt><rp>）</rp></ruby>る幾多の黒い頭が動いていた。特別の事情のない限り、私はついに先生を見逃したかも知れなかった。それほど浜辺が混雑し、それほど私の頭が<ruby><rb>放漫</rb><rp>（</rp><rt>ほうまん</rt><rp>）</rp></ruby>であったにもかかわらず、私がすぐ先生を見付け出したのは、先生が一人の西洋人を<ruby><rb>伴</rb><rp>（</rp><rt>つ</rt><rp>）</rp></ruby>れていたからである。<br />
+　その西洋人の優れて白い皮膚の色が、掛茶屋へ入るや<ruby><rb>否</rb><rp>（</rp><rt>いな</rt><rp>）</rp></ruby>や、すぐ私の注意を<ruby><rb>惹</rb><rp>（</rp><rt>ひ</rt><rp>）</rp></ruby>いた。純粋の日本の<ruby><rb>浴衣</rb><rp>（</rp><rt>ゆかた</rt><rp>）</rp></ruby>を着ていた彼は、それを<ruby><rb>床几</rb><rp>（</rp><rt>しょうぎ</rt><rp>）</rp></ruby>の上にすぽりと<ruby><rb>放</rb><rp>（</rp><rt>ほう</rt><rp>）</rp></ruby>り出したまま、腕組みをして海の方を向いて立っていた。彼は我々の<ruby><rb>穿</rb><rp>（</rp><rt>は</rt><rp>）</rp></ruby>く<ruby><rb>猿股</rb><rp>（</rp><rt>さるまた</rt><rp>）</rp></ruby>一つの<ruby><rb>外</rb><rp>（</rp><rt>ほか</rt><rp>）</rp></ruby>何物も肌に着けていなかった。私にはそれが第一不思議だった。私はその二日前に<ruby><rb>由井</rb><rp>（</rp><rt>ゆい</rt><rp>）</rp></ruby>が<ruby><rb>浜</rb><rp>（</rp><rt>はま</rt><rp>）</rp></ruby>まで行って、砂の上にしゃがみながら、長い間西洋人の海へ入る様子を<ruby><rb>眺</rb><rp>（</rp><rt>なが</rt><rp>）</rp></ruby>めていた。私の<ruby><rb>尻</rb><rp>（</rp><rt>しり</rt><rp>）</rp></ruby>をおろした所は少し小高い丘の上で、そのすぐ<ruby><rb>傍</rb><rp>（</rp><rt>わき</rt><rp>）</rp></ruby>がホテルの裏口になっていたので、私の<ruby><rb>凝</rb><rp>（</rp><rt>じっ</rt><rp>）</rp></ruby>としている<ruby><rb>間</rb><rp>（</rp><rt>あいだ</rt><rp>）</rp></ruby>に、<ruby><rb>大分</rb><rp>（</rp><rt>だいぶ</rt><rp>）</rp></ruby>多くの男が塩を浴びに出て来たが、いずれも胴と腕と<ruby><rb>股</rb><rp>（</rp><rt>もも</rt><rp>）</rp></ruby>は出していなかった。女は<ruby><rb>殊更</rb><rp>（</rp><rt>ことさら</rt><rp>）</rp></ruby>肉を隠しがちであった。大抵は頭に<ruby><rb>護謨製</rb><rp>（</rp><rt>ゴムせい</rt><rp>）</rp></ruby>の<ruby><rb>頭巾</rb><rp>（</rp><rt>ずきん</rt><rp>）</rp></ruby>を<ruby><rb>被</rb><rp>（</rp><rt>かぶ</rt><rp>）</rp></ruby>って、<ruby><rb>海老茶</rb><rp>（</rp><rt>えびちゃ</rt><rp>）</rp></ruby>や<ruby><rb>紺</rb><rp>（</rp><rt>こん</rt><rp>）</rp></ruby>や<ruby><rb>藍</rb><rp>（</rp><rt>あい</rt><rp>）</rp></ruby>の色を波間に浮かしていた。そういう有様を目撃したばかりの私の<ruby><rb>眼</rb><rp>（</rp><rt>め</rt><rp>）</rp></ruby>には、猿股一つで済まして<ruby><rb>皆</rb><rp>（</rp><rt>みん</rt><rp>）</rp></ruby>なの前に立っているこの西洋人がいかにも珍しく見えた。
+</div>
+
+    <!-- scripts -->
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone-min.js"></script>
+    <script type="text/javascript" src="https://nehan.googlecode.com/hg/nehan4.min.js"></script>
+    <script type="text/javascript" src="jquery.paged-card.js"></script>
+    <script tyle="text/javascript">
+      $(function(){
+        $(".paged-card").pagedCard();
+      });
+    </script>
+  </body>
+</html>
