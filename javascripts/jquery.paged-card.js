@@ -52,7 +52,7 @@
     asyncGet : function(){
       var self = this;
       this.get("stream").asyncGet({
-	onProgress : function(){
+	onProgress : function(stream, tree){
 	  self.set("progress", self.get("progress") + 1); // -> change:progress
 	}
       });
@@ -252,6 +252,9 @@
 
   // supported options
   $.fn.pagedCard.defaults = {
+
+    // card title text displayed at header.
+    title:"",
 
     // document direction. "hori" or "vert" enabled.
     direction:"hori",
