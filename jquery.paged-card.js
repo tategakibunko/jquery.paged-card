@@ -58,7 +58,7 @@
       });
     },
     getPage : function(pos){
-      return this.get("stream").get(pos);
+      return this.get("stream").getPage(pos);
     }
   });
 
