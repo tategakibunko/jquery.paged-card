@@ -169,7 +169,7 @@
     renderPage : function(){
       var pos = this.model.paging.get("pos");
       var page = this.model.stream.getPage(pos);
-      return this.$el.html(page.html);
+      return this.$el.empty().append(page.element);
     },
     renderStandby : function(){
       return this.$el
