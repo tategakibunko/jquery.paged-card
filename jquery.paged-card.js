@@ -202,7 +202,7 @@
 	return engines[key];
       }
       var engine = Nehan.setup({
-	layout:layout.getNehanLayout()
+	display:layout.getNehanLayout()
       });
       engines[key] = engine; // cache
       return engine;
