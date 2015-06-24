@@ -8,12 +8,24 @@
       var source = this.get("template")[key] || "";
       return _.template(source);
     },
+    getBodyStyle: function(){
+      var is_vert = this.get("direction") === "vert";
+      var flow = is_vert? "tb-rl" : "lr-tb";
+      var font_family = is_vert? this.get("vertFontFamily") : this.get("horiFontFamily");
+      return {
+	flow:flow,
+	fontSize:this.get("fontSize"),
+	fontFamily:font_family,
+	width:this.get("width"),
+	height:this.get("height")
+      };
+    },
     getNehanLayout : function(){
       return _.pick(this.attributes, [
 	"direction", "vert", "hori", "fontSize", "width", "height", "vertFontFamily", "horiFontFamily"
       ]);
     },
-    getKey : function(){
+    getLayoutKey : function(){
       var layout = this.getNehanLayout();
       return _.map(_.pairs(layout), function(kv){
 	return [kv[0], kv[1]].join(":");
@@ -58,7 +70,7 @@
       });
     },
     getPage : function(pos){
-      return this.get("stream").getPage(pos);
+      return this.get("stream").get(pos);
     }
   });
 
@@ -197,14 +209,16 @@
     var elements = this;
     var opt = $.extend({}, $.fn.pagedCard.defaults, options);
     var get_engine = function(layout){
-      var key = layout.getKey();
-      if(engines[key]){
-	return engines[key];
+      var layout_key = layout.getLayoutKey();
+      if(engines[layout_key]){
+	return engines[layout_key];
       }
       var engine = Nehan.setup({
-	display:layout.getNehanLayout()
+	style:{
+	  body:layout.getBodyStyle()
+	}
       });
-      engines[key] = engine; // cache
+      engines[layout_key] = engine; // cache
       return engine;
     };
     
